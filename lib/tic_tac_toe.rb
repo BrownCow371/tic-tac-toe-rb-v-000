@@ -85,7 +85,11 @@ WIN_COMBINATIONS = [
   end
 
   def over?(board)
+<<<<<<< HEAD
     won?(board) || draw?(board) || full?(board)
+=======
+    won?(board) || full?(board)
+>>>>>>> e9d51136f8d5a29c5a458d40052963063bbbee15
   end
 
   def winner(board)
@@ -97,11 +101,19 @@ WIN_COMBINATIONS = [
 
   def play(board)
     until over?(board)
+<<<<<<< HEAD
      turn(board)
+=======
+      turn(board)
+>>>>>>> e9d51136f8d5a29c5a458d40052963063bbbee15
     end
     if won?(board)
       puts "Congratulations #{winner(board)}!"
     elsif draw?(board)
+<<<<<<< HEAD
       puts "Cat's Game!"
+=======
+      puts "Something Here"
+>>>>>>> e9d51136f8d5a29c5a458d40052963063bbbee15
   end
 end
